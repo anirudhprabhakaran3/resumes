@@ -1,0 +1,203 @@
+\documentclass[letterpaper,8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center} {\Huge \textmd{Anirudh Prabhakaran}} \end{center}
+\begin{center}
+    \href{mailto:anirudhprabhakaran3@gmail.com}{\underline{Mail}} -
+    \href{https://www.linkedin.com/in/anirudhprabhakaran/}{\underline{LinkedIn}} -
+    \href{https://github.com/anirudhprabhakaran3}{\underline{GitHub}} -
+    \href{https://twitter.com/anirudh23p}{\underline{Twitter}} -
+    \href{https://instagram.com/anirudhprabhakaran}{\underline{Instagram}}
+  
+\end{center}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology Karnataka, Surathkal}{December 2020 -  May 2024 \emph{(Expected)}}
+      {Bachelor of Technology }{Major CGPA: 9.13}
+      \newline
+      \newline
+      {Major: Electronics and Communication Engineering, Minor: Computer Science}
+    \resumeSubheading
+      {Sardar Patel Vidyalaya, New Delhi}{2020}
+      {XII - CBSE}{XII: 97.80\%}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{
+    Research Internship
+    } {February 2023 - Present}
+    {Under the guidance of Dr. Jeny Rajan, Dept. of CSE, NITK}{}
+
+          \resumeItemListStart
+           \resumeItem
+          {Started working on a project on Multilabel Classification of Hemorrhage Subclasses}
+          \resumeItem
+          {Tech Stack: Pandas, NumPy, PyTorch}
+      \resumeItemListEnd
+    
+  
+          \resumeSubheading
+      {\href{https://summerofcode.withgoogle.com/programs/2022/projects/njZwvRi0}{\underline{Google Summer of Code (GSoC) Contributor}}}{June 2022 - August 2022}
+      {\href{https://github.com/publiclab/plots2}{\underline{Public Lab}}}{}
+      \resumeItemListStart
+           \resumeItem
+          {Worked on deprecating legacy code to improve the performance of the application.}
+          \resumeItem
+          {Reduced a few DB query times to 50\%, for a userbase of 500k+ users.}
+        \resumeItem
+        {Tech Stack: Ruby on Rails, React, MySQL}
+      \resumeItemListEnd
+  
+        \resumeSubheading
+      {Machine Learning Intern}{May 2022 - June 2022}
+      {\href{https://in.fourthfrontier.com/}{\underline{Fourth Frontier}}}{}
+      \resumeItemListStart
+        \resumeItem
+          {Worked on creating a new model based on a research paper that aims to determine cardiac age from ECG signals in real-time.}
+        \resumeItem
+        {
+            Several models, including ResNet-18, were repurposed for linear regression problems based on ECG data.
+        }
+        \resumeItem
+        {Tech Stack: Python, PyTorch, Jupyter}
+      \resumeItemListEnd
+  
+      \resumeSubheading
+      {Software Engineering Intern}{February 2022 - April 2022}
+      {\href{https://ai4bharat.org}{\underline{AI4Bharat}}}{}
+      \resumeItemListStart
+                 \resumeItem
+          {Created a data accumulation and annotation platform, \href{https://github.com/AI4Bharat/Shoonya/}{\underline{\textbf{Shoonya}}}, used by language experts to collect data on Indian languages.}
+          \resumeItem{
+            Used by around 100 annotators since April 2022, with 120k tasks completed over 24 Indian languages and 3 project types.
+          }
+        \resumeItem{
+            Tech Stack: Python, Django, React, PostgreSQL
+        }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IRIS Labs Secretary}{March 2021 - Present}
+      {IRIS, NITK}{}
+      \resumeItemListStart
+        \resumeItem
+          {\href{https://iris.nitk.ac.in}{\underline{IRIS}} is the student-led ERP developed for automating all administrative and academic activities. User base of around 19k users}
+        \resumeItem
+        {Working on Urja (IoT) - a mobile app to facilitate the usage of the e-vehicle charging station installed in NITK.}
+        \resumeItem
+        {Working on Gyan Summarisation (ML) - consolidating advice for placement season from seniors' reports.}
+           \resumeItem
+          {Contributed to developing various modules like Hostel and Mess Allotment, Academic Certificates, Career Development Center and Alumni Connect, and the maintenance of many other modules.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+      \resumeSubItem
+    {\textbf{\underline{Optic Disc Segmentation and Glaucoma Detection:}} A project to first segment the optic disc from various retinal fundus images, then classify these segmented images into glaucomic and non-glaucomic images. Models like U-Net were used for segmentation; custom CNN, AlexNet and ResNet were used for classification. }
+    \resumeSubItem
+    {\textbf{\href{https://ieee.nitk.ac.in/virtual-expo/Lung-Disease/}{\underline{Lung Disease Detection: }}}A project to detect lung diseases in patients using chest x-rays through deep learning techniques, more specifically, falls under medical imaging. Multiple models, like AlexNet, VGG16 and ResNets, were used.}
+
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+ 
+ \item{
+    Python, SQL, Flask, TensorFlow, Scikit-Learn, PyTorch, Keras, React, Golang, Docker, ELK Stack, Django, Ruby on Rails
+ }
+   
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\section{Club Activities}
+ \resumeSubHeadingListStart
+    \item{
+     { \textbf{Treasurer, IEEE-NITK} }
+   }
+   \item {
+    Mentored 13 students in field of Machine Learning and Web Development as part of IEEE Mentorship Programs
+   }
+ \resumeSubHeadingListEnd
+
+
+\end{document}
